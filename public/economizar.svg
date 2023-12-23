@@ -1,0 +1,7 @@
+<svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="battery-charging">
+<path id="Vector" d="M5 19.1475H3C2.46957 19.1475 1.96086 18.9234 1.58579 18.5244C1.21071 18.1254 1 17.5843 1 17.02V8.51006C1 7.94581 1.21071 7.40468 1.58579 7.0057C1.96086 6.60671 2.46957 6.38257 3 6.38257H6.19M15 6.38257H17C17.5304 6.38257 18.0391 6.60671 18.4142 7.0057C18.7893 7.40468 19 7.94581 19 8.51006V17.02C19 17.5843 18.7893 18.1254 18.4142 18.5244C18.0391 18.9234 17.5304 19.1475 17 19.1475H13.81" stroke="#545353" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M23 13.8287V11.7012" stroke="#545353" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M11 6.38257L7 12.765H13L9 19.1475" stroke="#545353" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
