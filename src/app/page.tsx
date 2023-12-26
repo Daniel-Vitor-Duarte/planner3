@@ -1,3 +1,4 @@
+"use client";
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import logoP3 from '../../public/logo.png'
@@ -31,12 +32,15 @@ import dispositivos from '../../public/dispositivos.png'
 import check from '../../public/check.png'
 import Accordion from '../app/component/accordion'
 import ReactPlayer from 'react-player'
+import phone from '../../public/phone-frame.png'
+import Vide from '../app/component/videos'
+
 
 
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center overflow-x-hidden">
+    <main className="flex min-h-screen flex-col items-center overflow-x-hidden  font-Inter">
       <section className='flex w-screen h-[4.88rem]'>
         <div className='bg-[#F7D300] w-[1.1rem] h-[4.88rem]'></div>
         <div className='w-full bg-[#545454] pt-[1.44rem] pb-[1.26rem] flex justify-center sm:items-center'>
@@ -59,10 +63,10 @@ export default function Home() {
       </section>
       <section className='max-w-[65.625rem] sm:max-w-[22.5rem] w-full h-[105.7rem] lg:bg-[#E7E7E7] mt-[22.62rem] '>
         <div className='flex flex-col justify-center items-center -mt-[17.31rem]'>
-          <Image  src={leandroProd} alt='' className='max-w-[47.60275rem] w-full max-h-[28.76981rem] sm:max-w-[22.512rem]'/>
+          <Image  src={leandroProd} alt='' className='max-w-[47.60275rem] w-full max-h-[28.76981rem] h-auto sm:max-w-[22.512rem] sm:h-auto'/>
           <Image  src={play} alt='' className='absolute border-black sm:max-w-[3.33644rem]'/>
         </div>
-        <div className='flex flex-col items-center'><button className='max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[2.37rem] sm:max-w-[22.5rem] leading-[1.75rem]'>Acesse o aplicativo</button></div>
+        <div className='flex flex-col items-center'><a className='flex flex-col items-center w-full  ' href="https://pay.hotmart.com/B79805172S?off=jqkm1app&checkoutMode=10&bid=1703596018359"><button className='max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[2.37rem] sm:max-w-[22.5rem] leading-[1.75rem]'>Acesse o aplicativo</button></a></div>
 
         <div className='max-w-[52.25rem] w-full h-[9.5rem] border border-[#D4D4D4] rounded-[0.375rem] text-[2.8125rem] text-[#545353] font-bold mt-[4.75rem] -ml-[4.63rem] tracking-[0.05625rem] items-center flex justify-center leading-[2.86731rem] pl-[3rem] bg-[#E7E7E7] sm:hidden'>
           <h1>Leandro Ladeira, o "improdutivo" que realiza muito.</h1>
@@ -110,7 +114,7 @@ export default function Home() {
       </section>
 
       <section className=' w-full lg:hidden mt-[46rem]'>
-      <div className='flex flex-col items-center'><button className='max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[2.37rem] sm:max-w-[22.5rem] leading-[1.75rem]'>Acesse o aplicativo</button></div>
+      <div className='flex flex-col items-center'><a className='flex flex-col items-center w-full  ' href="https://pay.hotmart.com/B79805172S?off=jqkm1app&checkoutMode=10&bid=1703596018359"><button className='max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[2.37rem] sm:max-w-[22.5rem] leading-[1.75rem]'>Acesse o aplicativo</button></a></div>
       </section>
 
       <section className='flex flex-col max-w-[52.162rem] sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[7.88rem]'>
@@ -128,7 +132,7 @@ export default function Home() {
       </section>
 
       <section className=' w-full lg:hidden '>
-      <div className='flex flex-col items-center'><button className='max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[2.37rem] sm:max-w-[22.5rem] leading-[1.75rem]'>Acesse o aplicativo</button></div>
+      <div className='flex flex-col items-center'><a className='flex flex-col items-center w-full  ' href="https://pay.hotmart.com/B79805172S?off=jqkm1app&checkoutMode=10&bid=1703596018359"><button className='max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[2.37rem] sm:max-w-[22.5rem] leading-[1.75rem]'>Acesse o aplicativo</button></a></div>
       </section>
 
       <section className='flex flex-col max-w-[52.162rem] sm:max-w-[22.8125rem] mx-auto text-[#545353] mt-[7.88rem] sm:mt-[4.11rem]'>
@@ -165,17 +169,35 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='mt-[4.88rem] sm:hidden'>
-        <h1 className='text-[2.8125rem] text-[#545353] font-bold leading-[2.86731rem] tracking-[0.05625rem]'>Veja como tudo isso funciona na prática:</h1>
+
+      <section className='mt-[5.88rem] sm:hidden max-w-[73.125rem] w-full'>
+        <h1 className='text-[2.8125rem] text-[#545353] font-bold leading-[2.86731rem] tracking-[0.05625rem] ml-[5.56rem]'>Veja como tudo isso funciona na prática:</h1>
+        <div className='mx-auto'>
+        <Image src={plannerBar} alt='' className='mt-[1.5rem] mb-[.56rem]' />
         <div>
-        <Image src={plannerBar} alt='' className='mt-[1.5rem]' />
-        
-        <Image src={delega} alt='' className='' />
+          <ReactPlayer
+          className='gif'
+          loop
+          playing
+          width='73rem'
+          height=''
+          url="https://vendatodosantodia.com.br/planner3/videos/video-component-2-full-screen.mp4"/>
+          <div className='z-10  flex justify-center -mt-[35.5rem] -mr-[calc(100%-7rem)] '>
+          <ReactPlayer
+          className='gif2'
+          loop
+          playing
+          width='100%'
+          height='100%'
+          url="https://vendatodosantodia.com.br/planner3/videos/video-component-2-phone.mp4"/>
+          <Image src={phone} alt='' className='mx-auto relative min-w-[17.67644rem] ' />
+          </div>
+        </div>
         </div>
       </section>
       
       <section className=' w-full'>
-      <div className='flex flex-col items-center'><button className='max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[4.14rem] sm:max-w-[22.5rem] leading-[1.75rem]'>Acesse o aplicativo</button></div>
+      <div className='flex flex-col items-center'><a className='flex flex-col items-center w-full  ' href="https://pay.hotmart.com/B79805172S?off=jqkm1app&checkoutMode=10&bid=1703596018359"><button className='max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[4.14rem] sm:max-w-[22.5rem] leading-[1.75rem]'>Acesse o aplicativo</button></a></div>
       </section>
 
       <section className='flex flex-col max-w-[52.162rem] mx-auto text-[#545353] mt-[7.88rem] sm:mt-[4.11rem] sm:max-w-[20.4375rem]'>
@@ -232,7 +254,7 @@ export default function Home() {
       </section>
 
       <section className=' w-full'>
-      <div className='flex flex-col items-center'><button className='max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[4.14rem] sm:max-w-[22.5rem] leading-[1.75rem]'>Acesse o aplicativo</button></div>
+      <div className='flex flex-col items-center'><a className='flex flex-col items-center w-full  ' href="https://pay.hotmart.com/B79805172S?off=jqkm1app&checkoutMode=10&bid=1703596018359"><button className='max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[4.14rem] sm:max-w-[22.5rem] leading-[1.75rem]'>Acesse o aplicativo</button></a></div>
       </section>
 
       <section className='flex flex-col max-w-[52.162rem] sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[7.88rem]'>
@@ -254,7 +276,7 @@ export default function Home() {
         </section>
         
         <section className=' w-full'>
-        <div className='flex flex-col items-center'><button className='max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[4.14rem] sm:max-w-[22.5rem] leading-[1.75rem]'>Acesse o aplicativo</button></div>
+        <div className='flex flex-col items-center'><a className='flex flex-col items-center w-full  ' href="https://pay.hotmart.com/B79805172S?off=jqkm1app&checkoutMode=10&bid=1703596018359"><button className='max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[4.14rem] sm:max-w-[22.5rem] leading-[1.75rem]'>Acesse o aplicativo</button></a></div>
         </section>
 
         <section className='flex flex-col max-w-[52.162rem] sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[7.88rem]'>
@@ -268,7 +290,7 @@ export default function Home() {
       </section>
       
       <section className=' w-full lg:hidden'>
-        <div className='flex flex-col items-center'><button className='max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[4.14rem] sm:max-w-[22.5rem] leading-[1.75rem]'>Acesse o aplicativo</button></div>
+        <div className='flex flex-col items-center'><a className='flex flex-col items-center w-full  ' href="https://pay.hotmart.com/B79805172S?off=jqkm1app&checkoutMode=10&bid=1703596018359"><button className='max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[4.14rem] sm:max-w-[22.5rem] leading-[1.75rem]'>Acesse o aplicativo</button></a></div>
       </section>
 
       <section className='max-w-[65.625rem] sm:max-w-[22.5rem] w-full lg:h-[138.7rem] lg:bg-[#E7E7E7] mt-[6.05rem] '>
@@ -285,7 +307,7 @@ export default function Home() {
           </div>
 
           <section className=' w-full'>
-        <div className='flex flex-col items-center'><button className='max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[4.14rem] sm:max-w-[22.5rem] leading-[1.75rem]'>Acesse o aplicativo</button></div>
+        <div className='flex flex-col items-center'><a className='flex flex-col items-center w-full  ' href="https://pay.hotmart.com/B79805172S?off=jqkm1app&checkoutMode=10&bid=1703596018359"><button className='max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[4.14rem] sm:max-w-[22.5rem] leading-[1.75rem]'>Acesse o aplicativo</button></a></div>
         </section>
 
         <div className='sm:max-w-[24.5625rem] w-full mx-auto'>
@@ -300,7 +322,7 @@ export default function Home() {
       </section>
 
       <section className=' w-full'>
-        <div className='lg:hidden flex flex-col items-center'><button className='max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[3.83rem] sm:max-w-[22.5rem] leading-[1.75rem]'>Acesse o aplicativo</button></div>
+        <div className='lg:hidden flex flex-col items-center'><a className='flex flex-col items-center w-full  ' href="https://pay.hotmart.com/B79805172S?off=jqkm1app&checkoutMode=10&bid=1703596018359"><button className='max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[3.83rem] sm:max-w-[22.5rem] leading-[1.75rem]'>Acesse o aplicativo</button></a></div>
         </section>
 
         <section className='flex flex-col max-w-[56.162rem] sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[20.5rem] sm:mt-[4.17rem]'>
@@ -328,7 +350,7 @@ export default function Home() {
       </section>
 
       <section className=' w-full'>
-        <div className=' flex flex-col items-center'><button className='max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[3.83rem] sm:max-w-[22.5rem] leading-[1.75rem]'>Acesse o aplicativo</button></div>
+        <div className=' flex flex-col items-center'><a className='flex flex-col items-center w-full  ' href="https://pay.hotmart.com/B79805172S?off=jqkm1app&checkoutMode=10&bid=1703596018359"><button className='max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[3.83rem] sm:max-w-[22.5rem] leading-[1.75rem]'>Acesse o aplicativo</button></a></div>
         </section>
 
         <section className='flex flex-col max-w-[56.162rem] sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[6.25rem] sm:mt-[4.17rem]'>
@@ -340,14 +362,14 @@ export default function Home() {
           <Accordion />
         </section>
         <section className=' w-full'>
-        <div className=' flex flex-col items-center'><button className='max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[3.83rem] sm:max-w-[22.5rem] leading-[1.75rem]'>Acesse o aplicativo</button></div>
+        <div className=' flex flex-col items-center'><a className='flex flex-col items-center w-full  ' href=""><button className='max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[3.83rem] sm:max-w-[22.5rem] leading-[1.75rem]'>Acesse o aplicativo</button></a></div>
         </section>
 
-          <section className='w-full'>
-            <div className='w-[98%] mx-auto h-[0.0625rem] bg-[#C2C0C0] mt-[8rem]'></div>
+          <section className='w-full '>
+            <div className='w-[98%] sm:w-[92%] mx-auto h-[0.0625rem] bg-[#C2C0C0] mt-[8rem]'></div>
             
             <div className=' w-full h-[4.75rem] flex flex-col justify-center'>
-            <h1 className='text-[0.9375rem] text-[#7C7C7C] leading-[2.1875rem] text-center'>Copyright © 2023 Inc. Todos os direitos reservados. READY TO GO EDUCATION CNPJ: 37.643.030/0001-26</h1>
+            <h1 className='copyright sm:max-w-[19.1875rem] text-[0.9375rem] sm:text-[0.875rem] text-[#7C7C7C] leading-[2.1875rem] text-center mx-auto'>Copyright © 2023 Inc. Todos os direitos reservados. READY TO GO EDUCATION CNPJ: 37.643.030/0001-26</h1>
             </div>
           </section>
     </main>
