@@ -33,6 +33,8 @@ import check from "../../public/check.png";
 import Accordion from "../app/component/accordion";
 import ReactPlayer from "react-player";
 import phone from "../../public/phone-frame.png";
+import videoFull from "../../public/video-component-2-full-screen.mp4";
+import videoPhone from "../../public/video-component-2-phone.mp4";
 
 
 export default function Home() {
@@ -390,7 +392,7 @@ export default function Home() {
         </div>
       </section>
 
-      
+     
 
       <section className='mt-[5.88rem] sm:hidden max-w-[73.125rem] w-full'>
         <h1 className='text-[2.8125rem] text-[#545353] font-bold leading-[2.86731rem] tracking-[0.05625rem] ml-[5.56rem]'>Veja como tudo isso funciona na prática:</h1>

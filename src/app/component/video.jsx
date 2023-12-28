@@ -5,7 +5,7 @@ import videoPhone from "../../public/video-component-2-phone.mp4";
 const video = () => {
     return (
         <div className="w-full">
-            <video controls autostart autoPlay src={videoFull} type={}/>
+            <video controls autostart autoPlay src={videoFull} type={video/mp4}/>
         </div>
     )
 }
