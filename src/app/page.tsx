@@ -33,7 +33,6 @@ import check from '../../public/check.png'
 import Accordion from '../app/component/accordion'
 import ReactPlayer from 'react-player'
 import phone from '../../public/phone-frame.png'
-import Vide from '../app/component/videos'
 
 
 
@@ -169,6 +168,7 @@ export default function Home() {
         </div>
       </section>
 
+      <video src="public/video-component-2-full-screen.mp4"></video>
 
       <section className='mt-[5.88rem] sm:hidden max-w-[73.125rem] w-full'>
         <h1 className='text-[2.8125rem] text-[#545353] font-bold leading-[2.86731rem] tracking-[0.05625rem] ml-[5.56rem]'>Veja como tudo isso funciona na prática:</h1>
@@ -181,7 +181,7 @@ export default function Home() {
           playing
           width='73rem'
           height=''
-          url="https://vendatodosantodia.com.br/planner3/videos/video-component-2-full-screen.mp4"/>
+          url="video-component-2-full-screen.mp4"/>
           <div className='z-10  flex justify-center -mt-[35.5rem] -mr-[calc(100%-7rem)] '>
           <ReactPlayer
           className='gif2'
@@ -189,7 +189,7 @@ export default function Home() {
           playing
           width='100%'
           height='100%'
-          url="https://vendatodosantodia.com.br/planner3/videos/video-component-2-phone.mp4"/>
+          url="video-component-2-phone.mp4"/>
           <Image src={phone} alt='' className='mx-auto relative min-w-[17.67644rem] ' />
           </div>
         </div>
