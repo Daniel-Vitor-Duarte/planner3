@@ -34,6 +34,7 @@ import Accordion from "../app/component/accordion";
 import ReactPlayer from "react-player";
 import phone from "../../public/phone-frame.png";
 
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center overflow-x-hidden  font-Inter">
@@ -47,6 +48,7 @@ export default function Home() {
           />
         </div>
       </section>
+
       <section className="flex flex-col justify-center items-center">
         <div className="text-[#545353] flex flex-col justify-center items-center mt-[6.5rem] text-[1.25rem] sm:text-[1rem]">
           <div className="flex items-center">
@@ -402,7 +404,7 @@ export default function Home() {
           playing
           width='73rem'
           height=''
-          url="video-component-2-full-screen.mp4"/>
+          url='video-component-2-full-screen.mp4'/>
           <div className='z-10  flex justify-center -mt-[35.5rem] -mr-[calc(100%-7rem)] '>
           <ReactPlayer
           className='gif2'
@@ -416,39 +418,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-[5.88rem] sm:hidden max-w-[73.125rem] w-full">
-        <h1 className="text-[2.8125rem] text-[#545353] font-bold leading-[2.86731rem] tracking-[0.05625rem] ml-[5.56rem]">
-          Veja como tudo isso funciona na prática:
-        </h1>
-        <div className="mx-auto">
-          <Image src={plannerBar} alt="" className="mt-[1.5rem] mb-[.56rem]" />
-          <div>
-            <ReactPlayer
-              className="gif"
-              loop
-              playing
-              width="73rem"
-              height=""
-              url="https://vendatodosantodia.com.br/planner3/videos/video-component-2-full-screen.mp4"
-            />
-            <div className="z-10  flex justify-center -mt-[35.5rem] -mr-[calc(100%-7rem)] ">
-              <ReactPlayer
-                className="gif2"
-                loop
-                playing
-                width="100%"
-                height="100%"
-                url="https://vendatodosantodia.com.br/planner3/videos/video-component-2-phone.mp4"
-              />
-              <Image
-                src={phone}
-                alt=""
-                className="mx-auto relative min-w-[17.67644rem] "
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className=" w-full">
         <div className="flex flex-col items-center">
