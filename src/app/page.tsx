@@ -33,8 +33,7 @@ import check from "../../public/check.png";
 import Accordion from "../app/component/accordion";
 import ReactPlayer from "react-player";
 import phone from "../../public/phone-frame.png";
-import videoFull from "../../public/video-component-2-full-screen.mp4";
-import videoPhone from "../../public/video-component-2-phone.mp4";
+
 
 
 export default function Home() {
