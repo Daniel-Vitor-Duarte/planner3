@@ -31,8 +31,9 @@ import calendario from "../../public/calendarioP3.png";
 import dispositivos from "../../public/dispositivos.png";
 import check from "../../public/check.png";
 import Accordion from "../app/component/accordion";
-import ReactPlayer from "react-player";
 import phone from "../../public/phone-frame.png";
+import YouTube, { YouTubeProps } from 'react-youtube';
+
 
 
 
@@ -51,7 +52,7 @@ export default function Home() {
       </section>
 
       <section className="flex flex-col justify-center items-center">
-        <div className="text-[#545353] flex flex-col justify-center items-center mt-[6.5rem] text-[1.25rem] sm:text-[1rem]">
+        <div className="text-[#545353] flex flex-col justify-center items-center mt-[6.5rem] sm:mt-[2.44rem] text-[1.25rem] sm:text-[1rem]">
           <div className="flex items-center">
             <h1 className="text-[2.8125rem] sm:text-[1.5625rem] max-w-[50.0625rem] sm:max-w-[20.375rem] w-full text-center font-bold leading-[2.84063rem] sm:leading-[1.82031rem] tracking-[0.05625rem]">
               O sistema de{" "}
@@ -64,18 +65,18 @@ export default function Home() {
               </span>
             </h1>
           </div>
-          <div className="leading-[1.875rem] tracking-tight mt-[2.87rem] max-w-[62.5rem] sm:max-w-[20.375rem] w-full flex flex-col justify-center items-center ">
+          <div className="leading-[1.875rem] tracking-tight mt-[2.87rem] sm:mt-[1.25rem] max-w-[58.5rem] sm:max-w-[18.375rem] w-full flex flex-col justify-center items-center sm:mx-auto lg:text-center">
             <p>
               No vídeo abaixo, você vai assistir uma aula de 12 minutos, talvez
               os 12 minutos mais bem investidos da semana, talvez da sua vida.
             </p>
-            <p className="mt-[1rem]">
+            <p className="mt-[1rem] sm:mt-6">
               Você vai aprender a usar as técnicas de organização de tarefas das
               pessoas e empresas mais produtivas do mundo.
             </p>
           </div>
         </div>
-        <div className="mt-[1.94rem] max-w-[50.0625rem] sm:max-w-[20.375rem] text-center text-[1rem] font-bold">
+        <div className="mt-[1.94rem] sm:mt-[2.25rem] max-w-[50.0625rem] sm:max-w-[20.375rem] text-center text-[1rem] font-bold">
           <h1>
             &quot;A maioria das pessoas não progride na vida porque trabalha
             pouco, na verdade, <br className="sm:hidden" /> a maioria trabalha
@@ -84,8 +85,10 @@ export default function Home() {
         </div>
       </section>
       <section className="max-w-[65.625rem] sm:max-w-[22.5rem] w-full h-[105.7rem] lg:bg-[#E7E7E7] mt-[22.62rem] ">
-        <div className="flex flex-col justify-center items-center -mt-[17.31rem]">
-          <Image
+        <div className="flex flex-col justify-center items-center -mt-[17.31rem] w-full">
+        <YouTube
+         videoId="JLYf0OjS5aA"/>
+          {/* <Image
             src={leandroProd}
             alt=""
             className="max-w-[47.60275rem] w-full max-h-[28.76981rem] h-auto sm:max-w-[22.512rem] sm:h-auto"
@@ -94,14 +97,14 @@ export default function Home() {
             src={play}
             alt=""
             className="absolute border-black sm:max-w-[3.33644rem]"
-          />
+          /> */}
         </div>
         <div className="flex flex-col items-center">
           <a
             className="flex flex-col items-center w-full  "
             href="https://pay.hotmart.com/B79805172S?off=jqkm1app&checkoutMode=10&bid=1703596018359"
           >
-            <button className="max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[2.37rem] sm:max-w-[22.5rem] leading-[1.75rem]">
+            <button className="max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[3.44rem] sm:max-w-[22.5rem] leading-[1.75rem]">
               Acesse o aplicativo
             </button>
           </a>
@@ -118,7 +121,7 @@ export default function Home() {
           <Image src={leandro14} alt="" className="" />
         </div>
 
-        <section className="mt-[2.94rem] flex sm:flex sm:flex-col sm:mx-auto sm:bg-[#E3E3E3] sm:mt-[8.11rem] ">
+        <section className="mt-[2.94rem] flex sm:flex sm:flex-col sm:mx-auto sm:bg-[#E3E3E3] sm:mt-[9.11rem] sm:pb-2 sm:rounded-[0.375rem]">
           <div className="lg-phone flex lg:hidden max-w-[22.5rem] w-full h-[11.0625rem] ">
             <div className="-mt-[5rem]">
               <Image
@@ -154,13 +157,13 @@ export default function Home() {
               procrastinação, e de uma aparente desorganização, cheguei
               relativamente longe no mundo dos negócios.
             </p>
-            <p className="mt-4">
+            <p className="mt-7 sm:mt-6">
               Para ser sincero, os primeiros 10 anos da minha carreira foram de
               muito trabalho e pouco sucesso. Tive uma pequena agência,
               trabalhava de domingo a domingo, a retirada mensal era mixuruca, o
               sentimento de realização e reconhecimento profissional era zero.
             </p>
-            <p className="mt-4">
+            <p className="mt-7 sm:mt-6">
               Em 2013, as coisas começaram a mudar. De lá pra cá, foram mais de{" "}
               <strong>
                 200 milhões faturados, milhões de inscritos nas redes sociais,
@@ -169,13 +172,13 @@ export default function Home() {
               e o reconhecimento de estar entre os{" "}
               <strong>maiores do Brasil</strong> na minha área.
             </p>
-            <p className="mt-4">
+            <p className="mt-7 sm:mt-6">
               Só para ter uma ideia, em 2023 eu fiz{" "}
               <strong>18 eventos próprios</strong> – mentorias, imersões de
               marketing e até algumas apresentações de stand-up comedy, que é um
               hobby meu.
             </p>
-            <p className="mt-4">
+            <p className="mt-7 sm:mt-6">
               Publiquei mais de <strong>100 vídeos</strong> nas redes sociais,
               gravei mais de 500 anúncios, ganhei mais de{" "}
               <strong>700 mil seguidores</strong>, fiz mais de{" "}
@@ -186,7 +189,7 @@ export default function Home() {
               marketing digital do Brasil. Minha empresa bateu a marca de 30 mil
               clientes.
             </p>
-            <p className="mt-4">
+            <p className="mt-7 sm:mt-6">
               Ainda tive tempo de ter vida pessoal, fiz ao todo 6 viagens de
               lazer, com amigos e família: <strong>três internacionais</strong>,
               três aqui no <strong>Brasil</strong>. Fui fazer kitesurf em Fiji,
@@ -198,23 +201,23 @@ export default function Home() {
               teve toda essa programação, e eu ainda tive tempo para fazer o{" "}
               <strong>segundo filho</strong>.
             </p>
-            <p className="mt-4">
+            <p className="mt-7 sm:mt-6">
               Como alguém taxado como <strong>esquecido</strong>,{" "}
               <strong>improdutivo</strong> e <strong>sem rotinas</strong>{" "}
               milimetricamente elaboradas pode ter realizado tanto?
             </p>
-            <p className="mt-4">
+            <p className="mt-7 sm:mt-6">
               São muitos eventos, muita produção e, principalmente,{" "}
               <strong>muito resultado efetivo</strong> para alguém com esse
               perfil &quot;desleixado&quot;. Nem eu acredito que fiz tudo isso
               em <strong>12 meses</strong>.
             </p>
-            <p className="mt-4">
+            <p className="mt-7 sm:mt-6">
               O segredo não é trabalhar muito. A maioria das pessoas não
               progride na vida porque trabalha pouco; na verdade, a maioria
               trabalha muito, mas de maneira desordenada.
             </p>
-            <p className="mt-4">
+            <p className="mt-7 sm:mt-6 ">
               O segredo é saber o <strong>que fazer</strong>,{" "}
               <strong>o que não fazer</strong>, em que ordem fazer e,
               principalmente, <strong>fazer bem feito</strong>. Para fazer bem
@@ -231,27 +234,27 @@ export default function Home() {
             className="flex flex-col items-center w-full  "
             href="https://pay.hotmart.com/B79805172S?off=jqkm1app&checkoutMode=10&bid=1703596018359"
           >
-            <button className="max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[2.37rem] sm:max-w-[22.5rem] leading-[1.75rem]">
+            <button className="max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[9rem] sm:max-w-[22.5rem] leading-[1.75rem]">
               Acesse o aplicativo
             </button>
           </a>
         </div>
       </section>
 
-      <section className="flex flex-col max-w-[52.162rem] sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[7.88rem]">
+      <section className="flex flex-col max-w-[52.162rem] sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[3.44rem]">
         <h1 className="text-[2.8125rem] sm:text-[1.25rem] font-bold max-w-[40.125rem] leading-[2.86731rem] sm:leading-[1.6rem] sm:tracking-[0.025rem] tracking-[0.05625rem] lg:-ml-[8.38rem]">
-          Backlog: Entender isso pode mudar sua vida
+          Backlog: entender isso pode mudar sua vida
         </h1>
         <div className="max-w-[10.375rem] w-full h-[0.1875rem] bg-[#F7D300] rounded-r-[0.3125rem] lg:hidden mt-[.5rem]"></div>
         <div className="text-[1.25rem] sm:text-[1rem]  leading-[1.75rem]">
-          <p className="mt-[3.19rem] sm:mt-[1.25rem]">
+          <p className="mt-[2.94rem] sm:mt-[1.25rem]">
             <span className="font-semibold">Backlog</span>, palavra simples, com
             uma explicação lógica ainda mais simples. Backlog, nada mais é do
             que listar tarefas, demandas, projetos, compromissos e ideias, e
             depois priorizar a energia, alocando esforços de maneira
             estruturada.
           </p>
-          <p className="mt-4">
+          <p className="mt-7">
             Ao final, o objetivo é fazer menos, mas produzir mais. A{" "}
             <span className="font-semibold italic">
               Harvard Business Review
@@ -260,29 +263,29 @@ export default function Home() {
             projetos com base em sua relevância e valor, que é um conceito
             fundamental por trás do uso de Backlogs.
           </p>
-          <p className="mt-4">
+          <p className="mt-7">
             As maiores empresas de consultoria em gestão, como a McKinsey &
             Company e a Deloitte, recomendam a adoção de práticas ágeis e a
             utilização de Backlogs como uma maneira eficaz de melhorar o
             desempenho dos negócios.
           </p>
-          <p className="mt-4">
+          <p className="mt-7">
             Eu conheci o termo por acaso, minha esposa trabalhava no Google, eu
             ouvi uma conversa dela com alguns amigos, eles falaram que usavam as
             metodologias ágeis e falaram a palavra Scrum.
           </p>
-          <p className="mt-4">
+          <p className="mt-7">
             Eu anotei os termos, li e pesquisei. A princípio, fiquei frustrado.
             Criar uma lista de tarefas? Sério, esse é o segredo da produtividade
             das maiores empresas do mundo?
           </p>
-          <p className="mt-4">
+          <p className="mt-7">
             Claro que não, o segredo está em coletar tudo, organizar e
             estruturar uma forma inteligente, para que você foque,
             estrategicamente, no que impulsiona seu crescimento, ao mesmo tempo
             que você não deixar o que já construiu cair.
           </p>
-          <p className="mt-4">
+          <p className="mt-7">
             O backlog é a lente de aumento que amplia o foco na estrada para o
             sucesso.
           </p>
@@ -295,31 +298,31 @@ export default function Home() {
             className="flex flex-col items-center w-full  "
             href="https://pay.hotmart.com/B79805172S?off=jqkm1app&checkoutMode=10&bid=1703596018359"
           >
-            <button className="max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[2.37rem] sm:max-w-[22.5rem] leading-[1.75rem]">
+            <button className="max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[3rem] sm:max-w-[22.5rem] leading-[1.75rem]">
               Acesse o aplicativo
             </button>
           </a>
         </div>
       </section>
 
-      <section className="flex flex-col max-w-[52.162rem] sm:max-w-[22.8125rem] mx-auto text-[#545353] mt-[7.88rem] sm:mt-[4.11rem]">
+      <section className="flex flex-col max-w-[52.162rem] sm:max-w-[22.8125rem] mx-auto text-[#545353] mt-[2.94rem] sm:mt-[3.46rem]">
         <h1 className="text-[2.8125rem] sm:text-[1.25rem] font-bold max-w-[40.125rem] leading-[2.86731rem] tracking-[0.05625rem] lg:-ml-[8.38rem] sm:tracking-[0.025rem] sm:leading-[1.6rem] sm:max-w-[20.4375rem] sm:mx-auto">
           Backlog na prática: usando a lógica do P3
         </h1>
         <div className="text-[1.25rem] sm:text-[1rem] leading-[1.75rem]">
           <div className="sm:max-w-[20.4375rem] sm:mx-auto">
             <div className="max-w-[10.375rem] w-full h-[0.1875rem] bg-[#F7D300] rounded-r-[0.3125rem] lg:hidden mt-[.5rem]"></div>
-            <p className="mt-[3.19rem] sm:mt-[1.25rem]">
+            <p className="mt-[2.94rem] sm:mt-[1.25rem]">
               Na vida real, todo dia, você tem que fazer coisas, realizar
               tarefas, projetos e compromissos. A partir de agora, antes de
               fazer qualquer demanda, você vai anotar no backlog.
             </p>
-            <p className="mt-4">
+            <p className="mt-7">
               Teve uma ideia de vídeo, coloca no backlog; alguém te mandou um
               e-mail pedindo um relatório, coloca no backlog: criar relatório.
               Vai ter uma reunião com o contador, coloca no backlog.
             </p>
-            <p className="mt-4">
+            <p className="mt-7">
               No início, seu backlog vai ficar grande, com o passar do tempo, ao
               implementar essa lógica, você vai ver que ele vai diminuir de
               tamanho. Primeiro, porque vai conseguir realizar vários projetos
@@ -329,28 +332,28 @@ export default function Home() {
               tempo, sem te trazer muita eficiência em relação às suas
               realizações.
             </p>
-            <p className="mt-4">
+            <p className="mt-7">
               Seu backlog nunca vai zerar, se zerar, você está fazendo errado.
               Todo dia você tem que alimentar seu backlog com demandas que te
               ajudem a realizar seus objetivos.
             </p>
-            <p className="mt-4">
+            <p className="mt-7">
               O jeito errado de pensar em backlog é fazer uma lista de tarefas
               sem critérios. Com o <strong>Planner 3</strong>, quando você
               cadastra uma demanda, ela tem que responder a critérios e é aqui
               que a mágica começa a acontecer.
             </p>
-            <p className="mt-4">
+            <p className="mt-7">
               <strong>Você organiza tudo em 3 categorias:</strong>
             </p>
-            <p className="mt-4">
+            <p className="mt-7">
               <strong>Urgente, Importante e Delegável,</strong> essa organização
               te mantém produtivo porque:
             </p>
           </div>
-          <div className="sm:bg-[#FFF] sm:w-[22.8125rem] sm:h-[54.625rem] sm:rounded-[1.25rem] sm:mt-[1.88rem]">
+          <div className="sm:bg-[#FFF] sm:w-[22.8125rem] sm:h-[54.625rem] sm:rounded-[1.25rem] sm:mt-[3rem]">
             <div className="sm:max-w-[18.375rem] sm:flex sm:flex-col sm:gap-[2.56rem] sm:text-[1rem] sm:mx-auto ">
-              <div className="flex items-start gap-[1.06rem] lg:mt-[2.19rem] sm:mt-[2rem] h-[7.5625rem] border-b-[#959595] border-b sm:h-[10.9375rem]">
+              <div className="flex items-start gap-[1.06rem] lg:mt-[2.94rem] sm:mt-[2rem] h-[7.5625rem] border-b-[#959595] border-b sm:h-[10.9375rem]">
                 <Image src={urgente} alt="" className="sm:hidden" />
                 <p className="">
                   {" "}
@@ -360,7 +363,7 @@ export default function Home() {
                   ou as consequências serão <strong>grandes</strong>.
                 </p>
               </div>
-              <div className="flex items-start gap-[1.06rem] lg:mt-[2.19rem] h-[7.5625rem] border-b-[#959595] border-b sm:h-[13.75rem]">
+              <div className="flex items-start gap-[1.06rem] lg:mt-[2.56rem] h-[7.5625rem] border-b-[#959595] border-b sm:h-[13.75rem]">
                 <Image src={importate} alt="" className="sm:hidden" />
                 <p className="">
                   <strong>Importante:</strong> Traz clareza do que é adiável,
@@ -371,7 +374,7 @@ export default function Home() {
                   <strong>está aqui</strong>.
                 </p>
               </div>
-              <div className="flex items-start gap-[1.06rem] lg:mt-[2.19rem] h-[7.5625rem]  sm:h-[19.0625rem]">
+              <div className="flex items-start gap-[1.06rem] lg:mt-[2.56rem] h-[7.5625rem]  sm:h-[19.0625rem]">
                 <Image src={delega} alt="" className="sm:hidden" />
                 <p className="">
                   {" "}
@@ -391,34 +394,26 @@ export default function Home() {
         </div>
       </section>
 
-     
-
-      <section className='mt-[5.88rem] sm:hidden max-w-[73.125rem] w-full'>
-        <h1 className='text-[2.8125rem] text-[#545353] font-bold leading-[2.86731rem] tracking-[0.05625rem] ml-[5.56rem]'>Veja como tudo isso funciona na prática:</h1>
+      <section className='mt-[2.94rem] sm:hidden max-w-[73.125rem] w-full '>
+        <h1 className='text-[2.8125rem] text-[#545353] font-bold leading-[2.86731rem] tracking-[0.05625rem] ml-[5.56rem] '>Veja como tudo isso funciona na prática:</h1>
         <div className='mx-auto'>
-        <Image src={plannerBar} alt='' className='mt-[1.5rem] mb-[.56rem]' />
+        <Image src={plannerBar} alt='' className='mt-[2.94rem] mb-[.56rem]' />
         </div>
         <div>
-          <ReactPlayer
-          className='gif'
-          loop
-          playing
-          width='73rem'
-          height=''
-          url='video-component-2-full-screen.mp4'/>
+          <video autoPlay loop muted className='gif w-[73rem]'>
+            <source src="video-component-2-full-screen.mp4" />
+          </video>
           <div className='z-10  flex justify-center -mt-[35.5rem] -mr-[calc(100%-7rem)] '>
-          <ReactPlayer
-          className='gif2'
-          loop
-          playing
-          width='100%'
-          height='100%'
-          url="video-component-2-phone.mp4"/>
-          <Image src={phone} alt='' className='mx-auto relative min-w-[17.67644rem] ' />
+          <video autoPlay loop muted className='gif2 w-full h-full'>
+            <source src="video-component-2-phone.mp4" />
+          </video>
+          <Image src={phone} alt='' className='mx-auto relative min-w-[17.67644rem] rounded-[0.50438rem]' />
           </div>
         </div>
       </section>
 
+
+      
 
       <section className=" w-full">
         <div className="flex flex-col items-center">
@@ -426,48 +421,48 @@ export default function Home() {
             className="flex flex-col items-center w-full  "
             href="https://pay.hotmart.com/B79805172S?off=jqkm1app&checkoutMode=10&bid=1703596018359"
           >
-            <button className="max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[4.14rem] sm:max-w-[22.5rem] leading-[1.75rem]">
+            <button className="max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-2 text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[3.44rem] sm:max-w-[22.5rem] leading-[1.75rem]">
               Acesse o aplicativo
             </button>
           </a>
         </div>
       </section>
 
-      <section className="flex flex-col max-w-[52.162rem] mx-auto text-[#545353] mt-[7.88rem] sm:mt-[4.11rem] sm:max-w-[20.4375rem]">
+      <section className="flex flex-col max-w-[52.162rem] mx-auto text-[#545353] mt-[2.94rem] sm:mt-[3.44rem] sm:max-w-[20.4375rem]">
         <h1 className="text-[2.8125rem] sm:text-[1.25rem] font-bold lg:max-w-[40.125rem] sm:max-w-full leading-[2.86731rem] sm:leading-[1.6rem] sm:tracking-[0.025rem] tracking-[0.05625rem] lg:-ml-[8.38rem]">
           Como organizar o dia com ultra eficiência
         </h1>
         <div className="max-w-[10.375rem] w-full h-[0.1875rem] bg-[#F7D300] rounded-r-[0.3125rem] lg:hidden mt-[.5rem]"></div>
         <div className="text-[1.25rem] sm:text-[1rem] leading-[1.75rem]">
-          <p className="mt-[3.19rem] sm:mt-[1.25rem]">
+          <p className="mt-[2.94rem] sm:mt-[1.25rem]">
             Agora que você tem um backlog organizado, você precisa organizar seu
             dia. Com o <strong>P3</strong>, você faz isso com{" "}
             <strong>poucos cliques</strong> e de maneira{" "}
             <strong>inteligente</strong>.
           </p>
-          <p className="mt-4">
+          <p className="mt-7 sm:mt-6">
             O dia será organizado com uma estrutura que o obriga a trabalhar de
             um jeito que seus projetos nunca parem, e que tudo esteja muito
             alinhado com suas metas e objetivos.
           </p>
-          <p className="mt-4">
+          <p className="mt-7 sm:mt-6">
             O dia sempre será dividido em:{" "}
             <strong>compromissos, ações e vida pessoal</strong>.
           </p>
-          <div className="sm:max-w-[21.375rem] sm:rounded-[.75rem] sm:bg-[#fff] sm:h-[31.4rem]">
-            <p className="mt-4 sm:text-center sm:text-[#FFF] sm:bg-[#F7D300] sm:h-[3.3125rem] sm:rounded-t-[.75rem] sm:items-center sm:flex sm:justify-center sm:gap-[.5rem] font-semibold">
+          <div className="sm:max-w-[21.375rem] sm:rounded-[.75rem] sm:bg-[#fff] sm:h-[31.4rem] ">
+            <p className="mt-7 sm:mt-[3.44rem] sm:text-center sm:text-[#FFF] sm:bg-[#F7D300] sm:h-[3.3125rem] sm:rounded-t-[.75rem] sm:items-center sm:flex sm:justify-center sm:gap-[.5rem] font-semibold">
               <Image src={compromissos} alt="" className="lg:hidden" />
               <mark className="bg-[#F7D300] lg:px-3 sm:text-[#fff]">
                 Compromissos:
               </mark>
             </p>
             <div className="sm:max-w-[19.25rem] sm:mx-auto sm:px-[.2rem]">
-              <p className="mt-4">
+              <p className="mt-7 sm:mt-[1.33rem]">
                 Compromissos são demandas que vão tomar seu tempo, que precisam
                 ser feitas, mas que não necessariamente envolvem uma ação
                 prática. Normalmente são reuniões, aulas, eventos, encontros.
               </p>
-              <p className="mt-4">
+              <p className="mt-7 sm:mt-6">
                 Compromissos não necessariamente alavancam sua vida, na verdade,
                 na maioria das vezes, até atrasam o avanço, mas são necessários
                 para a manutenção do que foi criado anteriormente. Quem entender
@@ -475,15 +470,15 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="sm:max-w-[21.375rem] sm:rounded-[.75rem] sm:bg-[#fff] ">
-            <p className="mt-4 sm:text-center sm:text-[#FFF] sm:bg-[#F7D300] sm:h-[3.3125rem] sm:rounded-t-[.75rem] sm:items-center sm:flex sm:justify-center sm:gap-[.5rem] font-semibold">
+          <div className="sm:max-w-[21.375rem] sm:rounded-[.75rem] sm:h-[61.5rem] sm:bg-[#fff] ">
+            <p className="mt-7 sm:mt-[3.44rem] sm:text-center sm:text-[#FFF] sm:bg-[#F7D300] sm:h-[3.3125rem] sm:rounded-t-[.75rem] sm:items-center sm:flex sm:justify-center sm:gap-[.5rem] font-semibold">
               <Image src={acoes} alt="" className="lg:hidden" />
               <mark className="bg-[#F7D300] lg:px-3 sm:text-[#fff]">
                 Ações:
               </mark>
             </p>
             <div className="sm:max-w-[19.25rem] sm:mx-auto sm:px-[.2rem]">
-              <p className="mt-4 sm:mt-2">
+              <p className="mt-7 sm:mt-[.5rem]">
                 Ações são as atividades práticas que te levam aos seus
                 objetivos. Se você quer ser aprovado num concurso, a ação
                 prática é estudar 12h por dia. Se você quer vender um produto, a
@@ -492,14 +487,14 @@ export default function Home() {
                 e treinar sua palestra. O maior salto da produtividade está
                 aqui. Aqui está a alavanca do seu crescimento.
               </p>
-              <p className="mt-4">
+              <p className="mt-7 sm:mt-6">
                 A maioria das pessoas realiza porque evitam fazer o que tem que
                 ser feito. Por que as pessoas fazem isso?
               </p>
-              <p className="mt-4">
+              <p className="mt-7 sm:mt-6">
                 <strong>Três motivos:</strong>
               </p>
-              <div className="flex items-start gap-[1.06rem] mt-[2.19rem] sm:mt-[1.56rem] h-[4.5625rem]  sm:h-[7rem] border-b-[#959595] border-b ">
+              <div className="flex items-start gap-[1.06rem] mt-[2.56rem] sm:mt-[1.56rem] h-[4.9625rem]  sm:h-[7rem] border-b-[#959595] border-b ">
                 <Image src={excesso} alt="" className="sm:hidden" />
                 <p className="">
                   {" "}
@@ -507,14 +502,14 @@ export default function Home() {
                   você fica sempre ocupado, mas nunca eficiente;
                 </p>
               </div>
-              <div className="flex items-start gap-[1.06rem] mt-[2.19rem] sm:mt-[1.56rem] h-[3.5625rem] sm:h-[7rem] border-b-[#959595] border-b">
+              <div className="flex items-start gap-[1.06rem] mt-[2.56rem] sm:mt-[1.56rem] h-[3.9625rem] sm:h-[7rem] border-b-[#959595] border-b">
                 <Image src={medo} alt="" className="sm:hidden" />
                 <p className="">
                   <strong>Medo de falhar ou da responsabilidade</strong>, é
                   assim que você fica paralisado;
                 </p>
               </div>
-              <div className="flex items-start gap-[1.06rem] mt-[2.19rem] sm:mt-[1.56rem] h-[7.5625rem] ">
+              <div className="flex items-start gap-[1.06rem] mt-[2.56rem] sm:mt-[1.56rem] h-[6.3625rem] ">
                 <Image src={economizar} alt="" className="sm:hidden" />
                 <p className="">
                   <strong>Cérebro querendo economizar energia</strong>, é assim
@@ -523,27 +518,27 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <p className="mt-3 sm:mt-2 sm:hidden">
+            <p className=" sm:mt-2 sm:hidden">
               <strong>O Planner 3</strong> é muito eficiente porque ele expõe de
               maneira visual seu excesso de compromissos, seu medo de ações
               desafiadoras, e ele não permite que você fuja dos compromissos e
               ações do dia.
             </p>
           </div>
-          <div className="sm:max-w-[21.375rem] sm:rounded-[.75rem] sm:bg-[#fff] sm:h-[27rem]">
-            <p className="mt-4 sm:text-center sm:text-[#FFF] sm:bg-[#F7D300] sm:h-[3.3125rem] sm:rounded-t-[.75rem] sm:items-center sm:flex sm:justify-center sm:gap-[.5rem] font-semibold">
+          <div className="sm:max-w-[21.375rem] sm:rounded-[.75rem] sm:bg-[#fff] sm:h-[27.7rem]">
+            <p className="mt-7 sm:mt-[3.44rem] sm:text-center sm:text-[#FFF] sm:bg-[#F7D300] sm:h-[3.3125rem] sm:rounded-t-[.75rem] sm:items-center sm:flex sm:justify-center sm:gap-[.5rem] font-semibold">
               <Image src={user} alt="" className="lg:hidden" />
               <mark className="bg-[#F7D300] lg:px-3 sm:text-[#fff]">
                 Pessoal:
               </mark>
             </p>
             <div className="sm:max-w-[19.25rem] sm:mx-auto sm:px-[.2rem]">
-              <p className="mt-4">
+              <p className="mt-7 sm:mt-[.75rem]">
                 Muitas pessoas relegam a vida pessoal, mas isso tem um preço e
                 uma hora a conta chega. Quando a vida cobra esse preço, você
                 paga muito mais em dinheiro e muito mais em tempo.
               </p>
-              <p className="mt-4">
+              <p className="mt-7 sm:mt-6">
                 Vinte minutos de leitura por dia, exercícios esporádicos, tempo
                 com filhos e família, almoçar com amigos de longa data...
                 Experimente colocar três ações de cuidado com pessoal por dia e
@@ -560,33 +555,33 @@ export default function Home() {
             className="flex flex-col items-center w-full  "
             href="https://pay.hotmart.com/B79805172S?off=jqkm1app&checkoutMode=10&bid=1703596018359"
           >
-            <button className="max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[4.14rem] sm:max-w-[22.5rem] leading-[1.75rem]">
+            <button className="max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[2.94rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[3.44rem] sm:max-w-[22.5rem] leading-[1.75rem]">
               Acesse o aplicativo
             </button>
           </a>
         </div>
       </section>
 
-      <section className="flex flex-col max-w-[52.162rem] sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[7.88rem]">
+      <section className="flex flex-col max-w-[52.162rem] sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[2.94rem] sm:mt-[3.44rem]">
         <h1 className="text-[2.8125rem] sm:text-[1.25rem] font-bold max-w-[40.125rem] leading-[2.86731rem] sm:leading-[1.6rem] sm:tracking-[0.025rem] tracking-[0.05625rem] lg:-ml-[8.38rem]">
           Consistência sem congruência: perigo!
         </h1>
         <div className="max-w-[10.375rem] w-full h-[0.1875rem] bg-[#F7D300] rounded-r-[0.3125rem] lg:hidden mt-[.5rem]"></div>
         <div className="text-[1.25rem] sm:text-[1rem]  leading-[1.75rem]">
-          <p className="mt-[3.19rem] sm:mt-[1.25rem]">
+          <p className="mt-[2.94rem] sm:mt-[1.25rem]">
             Consistência sem congruência é trabalhar muito nas atividades
             erradas, sem foco.
           </p>
-          <p className="mt-4">
+          <p className="mt-7">
             Congruência sem consistência é trabalhar nas atividades certas, mas
             com pouca energia.
           </p>
-          <p className="mt-4">
+          <p className="mt-7">
             Se você quer levantar o muro não pode ir empilhando tijolos de
             maneira aleatória, você tem que alocar os tijolos de maneira
             congruente.
           </p>
-          <p className="mt-4">
+          <p className="mt-7">
             O <strong>P3</strong> te ajuda nisso, todo dia você sabe e tem a
             certeza que está levantando seu muro.
           </p>
@@ -596,17 +591,17 @@ export default function Home() {
         <Image
           src={grafico}
           alt=""
-          className="sm:hidden max-w-[70.25rem] mx-auto mt-[5.87rem] "
+          className="sm:hidden max-w-[70.25rem] mx-auto mt-[2.94rem] "
         />
         <Image
           src={graficoCel}
           alt=""
-          className="lg:hidden max-w-[21.9rem] mx-auto mt-[5.87rem] "
+          className="lg:hidden max-w-[21.9rem] mx-auto mt-[.81rem] "
         />
         <Image
           src={desenho}
           alt=""
-          className="sm:hidden max-w-[70.25rem] mx-auto mt-[3.87rem] "
+          className="sm:hidden max-w-[70.25rem] mx-auto mt-[2.94rem] "
         />
         <Image
           src={desenhoCel}
@@ -626,30 +621,30 @@ export default function Home() {
             className="flex flex-col items-center w-full  "
             href="https://pay.hotmart.com/B79805172S?off=jqkm1app&checkoutMode=10&bid=1703596018359"
           >
-            <button className="max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[4.14rem] sm:max-w-[22.5rem] leading-[1.75rem]">
+            <button className="max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[2.94rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[3.44rem] sm:max-w-[22.5rem] leading-[1.75rem]">
               Acesse o aplicativo
             </button>
           </a>
         </div>
       </section>
 
-      <section className="flex flex-col max-w-[52.162rem] sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[7.88rem]">
+      <section className="flex flex-col max-w-[52.162rem] sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[2.94rem] sm:mt-[3.44rem]">
         <h1 className="text-[2.8125rem] sm:text-[1.25rem] font-bold max-w-[40.125rem] leading-[2.86731rem] sm:leading-[1.6rem] sm:tracking-[0.025rem] tracking-[0.05625rem] lg:-ml-[8.38rem]">
           Por que não usar sistemas complexos?
         </h1>
-
+        <div className="max-w-[10.375rem] w-full h-[0.1875rem] bg-[#F7D300] rounded-r-[0.3125rem] lg:hidden mt-[.5rem]"></div>
         <div className="text-[1.25rem] sm:text-[1rem]  leading-[1.75rem]">
-          <p className="mt-[3.19rem] sm:mt-[1.25rem]">
+          <p className="mt-[2.94rem] sm:mt-[1.25rem]">
             Existem várias ferramentas e plataformas complexas e sofisticadas
             para gerenciamento de tarefas, por que o usar <strong>P3</strong>?
           </p>
-          <p className="mt-4">
+          <p className="mt-7">
             Porque ele não é complexo, nem sofisticado, é simples. Excesso de
             funções, tabelas, sistemas, indicadores para organizar o dia
             atrapalham mais que ajudam. Tudo o que você tem que fazer é simples,
             não complique sua própria vida.
           </p>
-          <p className="mt-4">
+          <p className="mt-7">
             O <strong>P3</strong> não é uma ferramenta para te ajudar a
             organizar projetos, gerenciar times ou administrar recursos de uma
             empresa, o <strong>P3</strong> é um gerenciador da sua produtividade
@@ -665,44 +660,44 @@ export default function Home() {
             className="flex flex-col items-center w-full  "
             href="https://pay.hotmart.com/B79805172S?off=jqkm1app&checkoutMode=10&bid=1703596018359"
           >
-            <button className="max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[4.14rem] sm:max-w-[22.5rem] leading-[1.75rem]">
+            <button className="max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[3.44rem] sm:max-w-[22.5rem] leading-[1.75rem]">
               Acesse o aplicativo
             </button>
           </a>
         </div>
       </section>
 
-      <section className="max-w-[65.625rem] sm:max-w-[22.5rem] w-full lg:h-[138.7rem] lg:bg-[#E7E7E7] mt-[6.05rem] ">
+      <section className="max-w-[65.625rem] sm:max-w-[22.5rem] w-full lg:h-[133.375rem] lg:bg-[#E7E7E7] mt-[4.94rem] sm:mt-[3.44rem]">
         <div className="max-w-[30.4rem] w-full lg:h-[9.5rem] lg:border border-[#D4D4D4] rounded-[0.375rem] text-[2.8125rem] sm:text-[1.25rem] text-[#545353] font-bold lg:-mt-[1.56rem] lg:-ml-[4.63rem]  tracking-[0.05625rem] sm:tracking-[0.025rem] items-center flex justify-center leading-[2.86731rem] sm:leading-[1.6rem] lg:pl-[3rem] sm:pr-[3rem]  lg:bg-[#E7E7E7] ">
           <h1>Acompanhe seu progresso</h1>
         </div>
         <Image
           src={calendario}
           alt=""
-          className="sm:max-w-[22.7255rem] max-w-[70.25rem] mx-auto sm:mt-[1.25rem] mt-[5.87rem] "
+          className="sm:max-w-[22.7255rem] max-w-[70.25rem] mx-auto sm:mt-[1.25rem] mt-[4rem] "
         />
         <div className=" text-[#545353] text-[1.25rem] sm:text-[1rem] lg:max-w-[56.875rem] sm:max-w-[20rem] mx-auto leading-[1.75rem] mt-[3.33rem] sm:mt-[1.25rem]">
           <p className="">Olhe para o calendário a cima:</p>
-          <p className="mt-4">
+          <p className="mt-7 sm:mt-6">
             As bolinhas verdes representam dias ganhos. O dia só é ganho quando
             você consegue concluir todas as atividades que você mesmo se propôs
             a fazer. A ideia é que sejam poucas atividades, no máximo três em
             cada categoria, estrategicamente pensadas de acordo com seus
             objetivos. É trabalhar pouco, mas todo dia, com congruência.
           </p>
-          <p className="mt-4">
+          <p className="mt-7 sm:mt-6">
             As bolinhas amarelas representam alerta. Isso acontece quando você
             listou suas atividades do dia, mas não conseguiu concluir tudo ou
             quando fez muitas alterações de tarefas no dia; isso demonstra falta
             de foco e inabilidade na hora de decidir o que fazer. Alerta.
           </p>
-          <p className="mt-4">
+          <p className="mt-7 sm:mt-6">
             As bolinhas vermelhas representam o dia perdido. O dia é perdido
             quando você não abre o P3, quando nem chegou a listar suas tarefas.
             O dia é perdido, seja porque você não planejou, não trabalhou ou
             trabalhou no &quot;modo aleatório&quot;. Cuidado.
           </p>
-          <p className="mt-4">
+          <p className="mt-7 sm:mt-6">
             Essa é uma maneira visual de ver suas chances de sucesso. Se seu
             calendário estiver majoritariamente verde, eu arriscaria dizer que
             vai bater todas as suas metas e objetivos; se seu calendário estiver
@@ -717,7 +712,7 @@ export default function Home() {
               className="flex flex-col items-center w-full  "
               href="https://pay.hotmart.com/B79805172S?off=jqkm1app&checkoutMode=10&bid=1703596018359"
             >
-              <button className="max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[4.14rem] sm:max-w-[22.5rem] leading-[1.75rem]">
+              <button className="max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[2.88rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[3.44rem] sm:max-w-[22.5rem] leading-[1.75rem]">
                 Acesse o aplicativo
               </button>
             </a>
@@ -725,17 +720,18 @@ export default function Home() {
         </section>
 
         <div className="sm:max-w-[24.5625rem] w-full mx-auto">
-          <div className="max-w-[44.59rem] sm:max-w-[20.5625rem] w-full lg:h-[9.5rem] lg:border border-[#D4D4D4] rounded-[0.375rem] text-[2.8125rem] sm:text-[1.25rem] text-[#545353] font-bold lg:mt-[1.87rem] lg:-ml-[4.63rem]  tracking-[0.05625rem] sm:tracking-[0.025rem] items-center flex justify-center leading-[2.86731rem] sm:leading-[1.6rem] lg:pl-[3rem] sm:pr-[3rem]  lg:bg-[#E7E7E7] sm:mt-[4.11rem] sm:mx-auto">
+          <div className="max-w-[44.59rem] sm:max-w-[20.5625rem] w-full lg:h-[9.5rem] lg:border border-[#D4D4D4] rounded-[0.375rem] text-[2.8125rem] sm:text-[1.25rem] text-[#545353] font-bold lg:mt-[2.94rem] lg:-ml-[4.63rem]  tracking-[0.05625rem] sm:tracking-[0.025rem] lg:items-center flex sm:flex-col justify-center leading-[2.86731rem] sm:leading-[1.6rem] lg:pl-[3rem] sm:pr-[3rem]  lg:bg-[#E7E7E7] sm:mt-[3.44rem] sm:mx-auto">
             <h1>P3 funciona em todos os dispositivos</h1>
+            <div className="max-w-[10.375rem] w-full h-[0.1875rem] bg-[#F7D300] rounded-r-[0.3125rem] lg:hidden mt-[.5rem]"></div>
           </div>
           <div className="max-w-[65.625rem] mx-auto ">
-            <h2 className="mt-[2.5rem] ml-[3.94rem] sm:hidden">
+            <h2 className=" -[2.69rem] ml-[3.94rem] sm:hidden">
               Dá só uma olhada:
             </h2>
             <Image
               src={dispositivos}
               alt=""
-              className=" max-w-[65.625rem] w-full mx-auto -z-10 lg:-mt-[7.31rem]"
+              className=" max-w-[65.625rem] w-full mx-auto -z-10 lg:-mt-[9.31rem]"
             />
           </div>
         </div>
@@ -747,39 +743,43 @@ export default function Home() {
             className="flex flex-col items-center w-full  "
             href="https://pay.hotmart.com/B79805172S?off=jqkm1app&checkoutMode=10&bid=1703596018359"
           >
-            <button className="max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[3.83rem] sm:max-w-[22.5rem] leading-[1.75rem]">
+            <button className="max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[1.75rem] sm:max-w-[22.5rem] leading-[1.75rem]">
               Acesse o aplicativo
             </button>
           </a>
         </div>
       </section>
 
-      <section className="flex flex-col max-w-[56.162rem] sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[20.5rem] sm:mt-[4.17rem]">
+      <section className="flex flex-col max-w-[56.162rem] sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[20.5rem] sm:mt-[3.44rem]">
         <h1 className="text-[2.8125rem] sm:text-[1.25rem] font-bold max-w-[40.125rem] leading-[2.86731rem] sm:leading-[1.6rem] sm:tracking-[0.025rem] tracking-[0.05625rem] lg:-ml-[8.38rem]">
           Bônus ao assinar o aplicativo você ganha...
         </h1>
-
+        <div className="max-w-[10.375rem] w-full h-[0.1875rem] bg-[#F7D300] rounded-r-[0.3125rem] lg:hidden mt-[.5rem]"></div>
         <div className="text-[1.25rem] sm:text-[1rem]  leading-[1.75rem]">
-          <p className="mt-[3.19rem] sm:mt-[1.25rem]">
+          <p className="mt-[2.94rem] sm:mt-[1.25rem]">
             Ao comprar o <strong>P3</strong> você recebe de bônus um acervo de
             materiais que vai te ajudar num caminho de mais produtividade e
             foco.
           </p>
-          <div className="font-semibold border border-[#CECDCD] rounded-[0.4375rem] h-[11.76rem] sm:h-[19.1rem] flex flex-col justify-center items-center mt-[3.25rem]">
+          <div className="font-semibold border border-[#CECDCD] rounded-[0.4375rem] h-[11.76rem] sm:h-[19.1rem] flex flex-col justify-center items-center mt-[2.94rem] ">
             <div className="max-w-[50.3rem] sm:max-w-[19.8rem] w-full ">
               <div className="flex gap-2 border-b border-[#D2D2D2] h-[3.6rem] sm:h-[7.56rem] items-center">
-                <Image src={check} alt="" className="h-[1.5rem] " />
-                <p>
-                  Aula mestra: As práticas de produtividade mais aceitas do
-                  mundo
-                </p>
+                <div className="flex sm:items-start gap-2">
+                  <Image src={check} alt="" className="h-[1.5rem] " />
+                  <p>
+                    Aula mestra: As práticas de produtividade mais aceitas do
+                    mundo
+                  </p>
+                </div>
               </div>
               <div className="flex gap-2 border-b border-[#D2D2D2] h-[3.6rem] items-center sm:h-[7.56rem]">
-                <Image src={check} alt="" className="h-[1.5rem]" />
-                <p>
-                  Indicações de livros, palestras e cursos para desenvolvimento
-                  pessoal
-                </p>
+                <div className="flex sm:items-start gap-2">
+                  <Image src={check} alt="" className="h-[1.5rem]" />
+                  <p>
+                    Indicações de livros, palestras e cursos para desenvolvimento
+                    pessoal
+                  </p>
+                </div>
               </div>
               <div className="flex gap-2  h-[3.6rem] items-center sm:h-[4.56rem]">
                 <Image src={check} alt="" className="h-[1.5rem]" />
@@ -796,20 +796,20 @@ export default function Home() {
             className="flex flex-col items-center w-full  "
             href="https://pay.hotmart.com/B79805172S?off=jqkm1app&checkoutMode=10&bid=1703596018359"
           >
-            <button className="max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[3.83rem] sm:max-w-[22.5rem] leading-[1.75rem]">
+            <button className="max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[2.94rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[3.83rem] sm:max-w-[22.5rem] leading-[1.75rem]">
               Acesse o aplicativo
             </button>
           </a>
         </div>
       </section>
 
-      <section className="flex flex-col max-w-[56.162rem] sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[6.25rem] sm:mt-[4.17rem]">
+      <section className="flex flex-col max-w-[56.162rem] sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[2.94rem] sm:mt-[4.17rem]">
         <h1 className="text-[2.8125rem] sm:text-[1.25rem] font-bold max-w-[40.125rem] leading-[2.86731rem] sm:leading-[1.6rem] sm:tracking-[0.025rem] tracking-[0.05625rem] lg:-ml-[8.38rem]">
           Embasamento científico
         </h1>
 
         <div className="text-[1.25rem] sm:text-[1rem]  leading-[1.75rem]">
-          <p className="mt-[3.19rem] sm:mt-[1.25rem]">
+          <p className="mt-[2.94rem] sm:mt-[1.25rem]">
             A lógica de alocação de atividades diárias do <strong>P3</strong>,
             foi desenvolvida baseada em diversos estudos científicos e teorias
             sobre produtividade e alta performance..
@@ -820,7 +820,7 @@ export default function Home() {
       <section className=" w-full">
         <div className=" flex flex-col items-center">
           <a className="flex flex-col items-center w-full  " href="">
-            <button className="max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[4.73rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[3.83rem] sm:max-w-[22.5rem] leading-[1.75rem]">
+            <button className="max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[2.94rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[4.69rem] sm:max-w-[22.5rem] leading-[1.75rem]">
               Acesse o aplicativo
             </button>
           </a>
@@ -828,10 +828,10 @@ export default function Home() {
       </section>
 
       <section className="w-full ">
-        <div className="w-[98%] sm:w-[92%] mx-auto h-[0.0625rem] bg-[#C2C0C0] mt-[8rem]"></div>
+        <div className="w-[98%] sm:w-[92%] mx-auto h-[0.0625rem] bg-[#C2C0C0] mt-[6.94rem] sm:mt-[3.25rem]"></div>
 
         <div className=" w-full h-[4.75rem] flex flex-col justify-center">
-          <h1 className="copyright sm:max-w-[19.1875rem] text-[0.9375rem] sm:text-[0.875rem] text-[#7C7C7C] leading-[2.1875rem] text-center mx-auto">
+          <h1 className="copyright sm:max-w-[19.1875rem] text-[0.9375rem] sm:text-[0.875rem] text-[#7C7C7C] sm:text-[#000] leading-[2.1875rem] sm:leading-[1.4375rem] text-center mx-auto">
             Copyright © 2023 Inc. Todos os direitos reservados. READY TO GO
             EDUCATION CNPJ: 37.643.030/0001-26
           </h1>
