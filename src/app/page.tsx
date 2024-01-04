@@ -32,10 +32,7 @@ import dispositivos from "../../public/dispositivos.png";
 import check from "../../public/check.png";
 import Accordion from "../app/component/accordion";
 import phone from "../../public/phone-frame.png";
-import YouTube, { YouTubeProps } from 'react-youtube';
-
-
-
+import YouTube, { YouTubeProps } from "react-youtube";
 
 export default function Home() {
   return (
@@ -86,8 +83,7 @@ export default function Home() {
       </section>
       <section className="max-w-[65.625rem] sm:max-w-[22.5rem] w-full h-[105.7rem] lg:bg-[#E7E7E7] mt-[22.62rem] ">
         <div className="flex flex-col justify-center items-center -mt-[17.31rem] w-full">
-        <YouTube
-         videoId="JLYf0OjS5aA"/>
+          <YouTube id="video" videoId="JLYf0OjS5aA" />
           {/* <Image
             src={leandroProd}
             alt=""
@@ -394,26 +390,29 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='mt-[2.94rem] sm:hidden max-w-[73.125rem] w-full '>
-        <h1 className='text-[2.8125rem] text-[#545353] font-bold leading-[2.86731rem] tracking-[0.05625rem] ml-[5.56rem] '>Veja como tudo isso funciona na prática:</h1>
-        <div className='mx-auto'>
-        <Image src={plannerBar} alt='' className='mt-[2.94rem] mb-[.56rem]' />
+      <section className="mt-[2.94rem] sm:hidden max-w-[73.125rem] w-full ">
+        <h1 className="text-[2.8125rem] text-[#545353] font-bold leading-[2.86731rem] tracking-[0.05625rem] ml-[5.56rem] ">
+          Veja como tudo isso funciona na prática:
+        </h1>
+        <div className="mx-auto">
+          <Image src={plannerBar} alt="" className="mt-[2.94rem] mb-[.56rem]" />
         </div>
         <div>
-          <video autoPlay loop muted className='gif w-[73rem]'>
+          <video autoPlay loop muted className="gif w-[73rem]">
             <source src="video-component-2-full-screen.mp4" />
           </video>
-          <div className='z-10  flex justify-center -mt-[35.5rem] -mr-[calc(100%-7rem)] '>
-          <video autoPlay loop muted className='gif2 w-full h-full'>
-            <source src="video-component-2-phone.mp4" />
-          </video>
-          <Image src={phone} alt='' className='mx-auto relative min-w-[17.67644rem] rounded-[0.50438rem]' />
+          <div className="z-10  flex justify-center -mt-[35.5rem] -mr-[calc(100%-7rem)] ">
+            <video autoPlay loop muted className="gif2 w-full h-full">
+              <source src="video-component-2-phone.mp4" />
+            </video>
+            <Image
+              src={phone}
+              alt=""
+              className="mx-auto relative min-w-[17.67644rem] rounded-[0.50438rem]"
+            />
           </div>
         </div>
       </section>
-
-
-      
 
       <section className=" w-full">
         <div className="flex flex-col items-center">
@@ -776,8 +775,8 @@ export default function Home() {
                 <div className="flex sm:items-start gap-2">
                   <Image src={check} alt="" className="h-[1.5rem]" />
                   <p>
-                    Indicações de livros, palestras e cursos para desenvolvimento
-                    pessoal
+                    Indicações de livros, palestras e cursos para
+                    desenvolvimento pessoal
                   </p>
                 </div>
               </div>
