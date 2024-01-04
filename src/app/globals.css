@@ -19,17 +19,30 @@ body {
 
 .gif2{
     position: absolute;
-    margin: 4rem 2rem 0 auto;
+    margin: 4.5rem 1.7rem 0 auto;
     z-index: 20;
     max-width: 15.58556rem;
     max-height: 32.63381rem;
-}
-
-.gif2 video{
     object-fit: cover;
     object-position: 0 80%;
+    border-radius: 0.50438rem;
 }
 
 .copyright{
     font-family: 'Anek Gujarati';
 }
+
+#widget4 {
+    width: 47.60275rem;
+    height: 28.76981rem;
+    border-radius: 0.63231rem;
+}
+
+@media (max-width: 1024px) {
+    #widget4 {
+        width: 22.512rem;
+        height: 13.60563rem;
+    } 
+}
+
+
