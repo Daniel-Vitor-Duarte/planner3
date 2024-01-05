@@ -110,7 +110,7 @@ export default function Home() {
           <h1>{'Leandro Ladeira, o "improdutivo" que realiza muito.'}</h1>
         </div>
 
-        <div className="absolute -ml-[7.69rem] sm:hidden w-[11.1875rem] mt-[2.94rem]">
+        <div className="absolute -ml-[7.69rem] sm:hidden w-[12.1875rem] mt-[2.94rem]">
           <Image src={leandro11} alt="" className="h-[24.25rem] w-[12.1875rem]" />
           <Image src={leandro12} alt="" className="h-[16.625rem] w-[12.1875rem]" />
           <Image src={leandro13} alt="" className="h-[16.5625rem] w-[12.1875rem]" />
