@@ -803,19 +803,23 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col max-w-[56.162rem] sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[2.94rem] sm:mt-[4.17rem]">
+      <section className="flex flex-col max-w-[56.162rem] w-full sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[2.94rem] sm:mt-[4.17rem] ">
         <h1 className="text-[2.8125rem] sm:text-[1.25rem] font-bold max-w-[40.125rem] leading-[2.86731rem] sm:leading-[1.6rem] sm:tracking-[0.025rem] tracking-[0.05625rem] lg:-ml-[8.38rem]">
           Embasamento científico
         </h1>
 
-        <div className="text-[1.25rem] sm:text-[1rem]  leading-[1.75rem]">
-          <p className="mt-[2.94rem] sm:mt-[1.25rem]">
-            A lógica de alocação de atividades diárias do <strong>P3</strong>,
-            foi desenvolvida baseada em diversos estudos científicos e teorias
-            sobre produtividade e alta performance..
-          </p>
+        <div className="flex flex-col items-center">
+          <div className="text-[1.25rem] sm:text-[1rem]  leading-[1.75rem] w-full">
+            <p className="mt-[2.94rem] sm:mt-[1.25rem] mb-[2.44rem]">
+              A lógica de alocação de atividades diárias do <strong>P3</strong>,
+              foi desenvolvida baseada em diversos estudos científicos e teorias
+              sobre produtividade e alta performance..
+            </p>
+          </div>
+          <div className="w-[52rem] sm:max-w-[21rem]">
+            <Accordion />
+          </div>
         </div>
-        <Accordion />
       </section>
       <section className=" w-full">
         <div className=" flex flex-col items-center">
