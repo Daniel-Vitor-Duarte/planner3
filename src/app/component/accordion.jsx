@@ -11,7 +11,7 @@ const AccordionItem = ({ title, content }) => {
   };
 
   return (
-    <div className="accordion-item text-[1.25rem] w-full bg-[#E7E7E7] min-h-[2.75rem] rounded-[0.5rem] mt-2 pl-4 pt-2 ">     
+    <div className="accordion-item text-[1.25rem] w-full bg-[#E7E7E7] min-h-[2.75rem] rounded-[0.5rem] mt-2 pl-4 pt-2 cursor-pointer">     
         <div className="accordion-header flex gap-2 items-center " onClick={toggleAccordion}>
         <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronRight} className='fa-xs'/>
           <div className="w-[0.125rem] h-[1.4375rem] bg-[#C6C6C6] "></div>

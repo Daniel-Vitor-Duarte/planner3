@@ -1,10 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import logoP3 from "../../public/logo.png";
-import leandroProd from "../../public/produtividade-img.png";
-import play from "../../public/play_circle.png";
-import line1 from "../../public/line-title.svg";
 import leandro11 from "../../public/leando1-1.png";
 import leandro12 from "../../public/leandro1-2.png";
 import leandro13 from "../../public/leandro1-3.png";
@@ -32,7 +28,10 @@ import dispositivos from "../../public/dispositivos.png";
 import check from "../../public/check.png";
 import Accordion from "../app/component/accordion";
 import phone from "../../public/phone-frame.png";
-import YouTube, { YouTubeProps } from "react-youtube";
+import YouTube from 'react-youtube';
+
+
+
 
 export default function Home() {
   return (
@@ -81,9 +80,10 @@ export default function Home() {
           </h1>
         </div>
       </section>
-      <section className="max-w-[65.625rem] sm:max-w-[22.5rem] w-full h-[105.7rem] lg:bg-[#E7E7E7] mt-[22.62rem] ">
+      <section className="max-w-[65.625rem] sm:max-w-[22.5rem] w-full h-[111.6875rem] lg:bg-[#E7E7E7] mt-[22.62rem] sm:mt-[19.9rem] rounded-[0.625rem]">
         <div className="flex flex-col justify-center items-center -mt-[17.31rem] w-full">
-          <YouTube id="video" videoId="JLYf0OjS5aA" />
+        <YouTube
+         videoId="JLYf0OjS5aA"/>
           {/* <Image
             src={leandroProd}
             alt=""
@@ -111,10 +111,10 @@ export default function Home() {
         </div>
 
         <div className="absolute -ml-[7.69rem] sm:hidden w-[11.1875rem] mt-[2.94rem]">
-          <Image src={leandro11} alt="" className=" " />
-          <Image src={leandro12} alt="" className=" " />
-          <Image src={leandro13} alt="" className=" " />
-          <Image src={leandro14} alt="" className="" />
+          <Image src={leandro11} alt="" className="h-[24.25rem] w-[12.1875rem]" />
+          <Image src={leandro12} alt="" className="h-[16.625rem] w-[12.1875rem]" />
+          <Image src={leandro13} alt="" className="h-[16.5625rem] w-[12.1875rem]" />
+          <Image src={leandro14} alt="" className="h-[16.625rem] w-[12.1875rem]" />
         </div>
 
         <section className="mt-[2.94rem] flex sm:flex sm:flex-col sm:mx-auto sm:bg-[#E3E3E3] sm:mt-[9.11rem] sm:pb-2 sm:rounded-[0.375rem]">
@@ -224,7 +224,7 @@ export default function Home() {
         </section>
       </section>
 
-      <section className=" w-full lg:hidden mt-[46rem]">
+      <section className=" w-full lg:hidden mt-[46rem] sm:mt-[40rem]">
         <div className="flex flex-col items-center">
           <a
             className="flex flex-col items-center w-full  "
@@ -237,7 +237,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col max-w-[52.162rem] sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[3.44rem]">
+      <section className="flex flex-col max-w-[52.162rem] sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[2.94rem]">
         <h1 className="text-[2.8125rem] sm:text-[1.25rem] font-bold max-w-[40.125rem] leading-[2.86731rem] sm:leading-[1.6rem] sm:tracking-[0.025rem] tracking-[0.05625rem] lg:-ml-[8.38rem]">
           Backlog: entender isso pode mudar sua vida
         </h1>
@@ -390,29 +390,26 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-[2.94rem] sm:hidden max-w-[73.125rem] w-full ">
-        <h1 className="text-[2.8125rem] text-[#545353] font-bold leading-[2.86731rem] tracking-[0.05625rem] ml-[5.56rem] ">
-          Veja como tudo isso funciona na prática:
-        </h1>
-        <div className="mx-auto">
-          <Image src={plannerBar} alt="" className="mt-[2.94rem] mb-[.56rem]" />
+      <section className='mt-[2.94rem] sm:hidden max-w-[73.125rem] w-full '>
+        <h1 className='text-[2.8125rem] text-[#545353] font-bold leading-[2.86731rem] tracking-[0.05625rem] ml-[5.56rem] '>Veja como tudo isso funciona na prática:</h1>
+        <div className='mx-auto'>
+        <Image src={plannerBar} alt='' className='mt-[2.94rem] mb-[.56rem]' />
         </div>
         <div>
-          <video autoPlay loop muted className="gif w-[73rem]">
+          <video autoPlay loop muted className='gif w-[73rem]'>
             <source src="video-component-2-full-screen.mp4" />
           </video>
-          <div className="z-10  flex justify-center -mt-[35.5rem] -mr-[calc(100%-7rem)] ">
-            <video autoPlay loop muted className="gif2 w-full h-full">
-              <source src="video-component-2-phone.mp4" />
-            </video>
-            <Image
-              src={phone}
-              alt=""
-              className="mx-auto relative min-w-[17.67644rem] rounded-[0.50438rem]"
-            />
+          <div className='z-10  flex justify-center -mt-[35.5rem] -mr-[calc(100%-7rem)] '>
+          <video autoPlay loop muted className='gif2 w-full h-full'>
+            <source src="video-component-2-phone.mp4" />
+          </video>
+          <Image src={phone} alt='' className='mx-auto relative min-w-[17.67644rem] rounded-[0.50438rem]' />
           </div>
         </div>
       </section>
+
+
+      
 
       <section className=" w-full">
         <div className="flex flex-col items-center">
@@ -724,13 +721,13 @@ export default function Home() {
             <div className="max-w-[10.375rem] w-full h-[0.1875rem] bg-[#F7D300] rounded-r-[0.3125rem] lg:hidden mt-[.5rem]"></div>
           </div>
           <div className="max-w-[65.625rem] mx-auto ">
-            <h2 className=" -[2.69rem] ml-[3.94rem] sm:hidden">
+            <h2 className=" mt-[2.69rem] ml-[3.94rem] sm:hidden">
               Dá só uma olhada:
             </h2>
             <Image
               src={dispositivos}
               alt=""
-              className=" max-w-[65.625rem] w-full mx-auto -z-10 lg:-mt-[9.31rem]"
+              className=" max-w-[65.625rem] w-full mx-auto -z-10 lg:-mt-[8.81rem]"
             />
           </div>
         </div>
@@ -775,8 +772,8 @@ export default function Home() {
                 <div className="flex sm:items-start gap-2">
                   <Image src={check} alt="" className="h-[1.5rem]" />
                   <p>
-                    Indicações de livros, palestras e cursos para
-                    desenvolvimento pessoal
+                    Indicações de livros, palestras e cursos para desenvolvimento
+                    pessoal
                   </p>
                 </div>
               </div>
