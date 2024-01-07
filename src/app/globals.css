@@ -32,14 +32,14 @@ body {
     font-family: 'Anek Gujarati';
 }
 
-#widget4 {
+#video {
     width: 47.60275rem;
     height: 28.76981rem;
     border-radius: 0.63231rem;
 }
 
 @media (max-width: 1024px) {
-    #widget4 {
+    #video {
         width: 22.512rem;
         height: 13.60563rem;
     } 

@@ -82,7 +82,7 @@ export default function Home() {
       </section>
       <section className="max-w-[65.625rem] sm:max-w-[22.5rem] w-full h-[111.6875rem] lg:bg-[#E7E7E7] mt-[22.62rem] sm:mt-[19.9rem] rounded-[0.625rem]">
         <div className="flex flex-col justify-center items-center -mt-[17.31rem] w-full">
-        <YouTube
+        <YouTube id="video"
          videoId="JLYf0OjS5aA"/>
           {/* <Image
             src={leandroProd}
