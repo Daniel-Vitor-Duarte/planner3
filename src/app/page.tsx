@@ -80,8 +80,8 @@ export default function Home() {
           </h1>
         </div>
       </section>
-      <section className="max-w-[65.625rem] sm:max-w-[22.5rem] w-full h-[111.6875rem] lg:bg-[#E7E7E7] mt-[22.62rem] sm:mt-[19.9rem] rounded-[0.625rem]">
-        <div className="flex flex-col justify-center items-center -mt-[17.31rem] w-full">
+      <section className="max-w-[65.625rem] sm:max-w-[22.5rem] w-full h-[111.6875rem] lg:bg-[#E7E7E7] mt-[22.62rem] sm:mt-[19.9rem] rounded-[0.625rem] mm:w-full mm:max-w-[58rem] mm:h-[123rem]">
+        <div className="flex flex-col justify-center items-center -mt-[17.31rem] w-full ">
         <YouTube id="video"
          videoId="JLYf0OjS5aA"/>
           {/* <Image
@@ -106,15 +106,15 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="max-w-[52.25rem] w-full h-[9.5rem] border border-[#D4D4D4] rounded-[0.375rem] text-[2.8125rem] text-[#545353] font-bold mt-[4.75rem] -ml-[4.63rem] tracking-[0.05625rem] items-center flex justify-center leading-[2.86731rem] pl-[3rem] bg-[#E7E7E7] sm:hidden">
+        <div className="max-w-[52.25rem] w-full h-[9.5rem] border border-[#D4D4D4] rounded-[0.375rem] text-[2.8125rem] text-[#545353] font-bold mt-[4.75rem] -ml-[4.63rem] tracking-[0.05625rem] items-center flex justify-center leading-[2.86731rem] pl-[3rem] bg-[#E7E7E7] sm:hidden mm:pl-6 mm:-ml-[2rem]">
           <h1>{'Leandro Ladeira, o "improdutivo" que realiza muito.'}</h1>
         </div>
 
-        <div className="absolute -ml-[7.69rem] sm:hidden w-[12.1875rem] mt-[2.94rem]">
-          <Image src={leandro11} alt="" className="h-[24.25rem] w-[12.1875rem]" />
-          <Image src={leandro12} alt="" className="h-[16.625rem] w-[12.1875rem]" />
-          <Image src={leandro13} alt="" className="h-[16.5625rem] w-[12.1875rem]" />
-          <Image src={leandro14} alt="" className="h-[16.625rem] w-[12.1875rem]" />
+        <div className="absolute -ml-[7.69rem] sm:hidden w-[12.1875rem] mm:w-[11.1875rem] mt-[2.94rem] mm:-ml-[2rem] ">
+          <Image src={leandro11} alt="" className="h-[24.25rem] w-[12.1875rem] mm:h-[22.25rem] mm:w-[11.1875rem]" />
+          <Image src={leandro12} alt="" className="h-[16.625rem] w-[12.1875rem] mm:h-[14.625rem] mm:w-[11.1875rem]" />
+          <Image src={leandro13} alt="" className="h-[16.5625rem] w-[12.1875rem] mm:h-[14.625rem] mm:w-[11.1875rem]" />
+          <Image src={leandro14} alt="" className="h-[16.625rem] w-[12.1875rem] mm:h-[14.625rem] mm:w-[11.1875rem] mm:rounded-b-[0.75rem]" />
         </div>
 
         <section className="mt-[2.94rem] flex sm:flex sm:flex-col sm:mx-auto sm:bg-[#E3E3E3] sm:mt-[9.11rem] sm:pb-2 sm:rounded-[0.375rem]">
@@ -140,14 +140,14 @@ export default function Home() {
 
           <div className="max-w-[20.8125rem] w-full mx-auto lg:hidden">
             <div className="max-w-[10.375rem] h-[0.1875rem] bg-[#F7D300] rounded-r-[0.3125rem] lg:hidden -mt-[5rem] "></div>
-            <div className="max-w-[20.8125rem] w-full text-[1.25rem]  text-[#545353] font-bold mx-auto tracking-[0.025rem] items-center flex justify-center leading-[1.60563rem] lg:hidden mt-[.19rem]">
+            <div className="max-w-[20.8125rem] w-full text-[1.25rem]  text-[#545353] font-bold mx-auto tracking-[0.025rem] items-center flex justify-center leading-[1.60563rem] lg:hidden mt-[.19rem] ">
               <h1>
                 Leandro Ladeira, o &quot;improdutivo&quot; que realiza muito.
               </h1>
             </div>
           </div>
 
-          <div className=" text-[#545353] text-[1.25rem] sm:text-[1rem] lg:max-w-[52.125rem] sm:max-w-[20rem] mx-auto leading-[1.75rem]">
+          <div className=" text-[#545353] text-[1.25rem] sm:text-[1rem] lg:max-w-[52.125rem] sm:max-w-[20rem] mx-auto leading-[1.75rem] mm:max-w-[45rem] mm:ml-[10.5rem]">
             <p className="">
               Apesar de um histórico escolar com notas baixas e tendência à
               procrastinação, e de uma aparente desorganização, cheguei
@@ -238,7 +238,7 @@ export default function Home() {
       </section>
 
       <section className="flex flex-col max-w-[52.162rem] sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[2.94rem]">
-        <h1 className="text-[2.8125rem] sm:text-[1.25rem] font-bold max-w-[40.125rem] leading-[2.86731rem] sm:leading-[1.6rem] sm:tracking-[0.025rem] tracking-[0.05625rem] lg:-ml-[8.38rem]">
+        <h1 className="text-[2.8125rem] sm:text-[1.25rem] font-bold max-w-[40.125rem] leading-[2.86731rem] sm:leading-[1.6rem] sm:tracking-[0.025rem] tracking-[0.05625rem] lg:-ml-[8.38rem] mm:-ml-[2rem]">
           Backlog: entender isso pode mudar sua vida
         </h1>
         <div className="max-w-[10.375rem] w-full h-[0.1875rem] bg-[#F7D300] rounded-r-[0.3125rem] lg:hidden mt-[.5rem]"></div>
@@ -302,7 +302,7 @@ export default function Home() {
       </section>
 
       <section className="flex flex-col max-w-[52.162rem] sm:max-w-[22.8125rem] mx-auto text-[#545353] mt-[2.94rem] sm:mt-[3.46rem]">
-        <h1 className="text-[2.8125rem] sm:text-[1.25rem] font-bold max-w-[40.125rem] leading-[2.86731rem] tracking-[0.05625rem] lg:-ml-[8.38rem] sm:tracking-[0.025rem] sm:leading-[1.6rem] sm:max-w-[20.4375rem] sm:mx-auto">
+        <h1 className="text-[2.8125rem] sm:text-[1.25rem] font-bold max-w-[40.125rem] leading-[2.86731rem] tracking-[0.05625rem] lg:-ml-[8.38rem] sm:tracking-[0.025rem] sm:leading-[1.6rem] sm:max-w-[20.4375rem] sm:mx-auto mm:-ml-[2rem]">
           Backlog na prática: usando a lógica do P3
         </h1>
         <div className="text-[1.25rem] sm:text-[1rem] leading-[1.75rem]">
@@ -425,7 +425,7 @@ export default function Home() {
       </section>
 
       <section className="flex flex-col max-w-[52.162rem] mx-auto text-[#545353] mt-[2.94rem] sm:mt-[3.44rem] sm:max-w-[20.4375rem]">
-        <h1 className="text-[2.8125rem] sm:text-[1.25rem] font-bold lg:max-w-[40.125rem] sm:max-w-full leading-[2.86731rem] sm:leading-[1.6rem] sm:tracking-[0.025rem] tracking-[0.05625rem] lg:-ml-[8.38rem]">
+        <h1 className="text-[2.8125rem] sm:text-[1.25rem] font-bold lg:max-w-[40.125rem] sm:max-w-full leading-[2.86731rem] sm:leading-[1.6rem] sm:tracking-[0.025rem] tracking-[0.05625rem] lg:-ml-[8.38rem] mm:-ml-[2rem]">
           Como organizar o dia com ultra eficiência
         </h1>
         <div className="max-w-[10.375rem] w-full h-[0.1875rem] bg-[#F7D300] rounded-r-[0.3125rem] lg:hidden mt-[.5rem]"></div>
@@ -559,7 +559,7 @@ export default function Home() {
       </section>
 
       <section className="flex flex-col max-w-[52.162rem] sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[2.94rem] sm:mt-[3.44rem]">
-        <h1 className="text-[2.8125rem] sm:text-[1.25rem] font-bold max-w-[40.125rem] leading-[2.86731rem] sm:leading-[1.6rem] sm:tracking-[0.025rem] tracking-[0.05625rem] lg:-ml-[8.38rem]">
+        <h1 className="text-[2.8125rem] sm:text-[1.25rem] font-bold max-w-[40.125rem] leading-[2.86731rem] sm:leading-[1.6rem] sm:tracking-[0.025rem] tracking-[0.05625rem] lg:-ml-[8.38rem] mm:-ml-[2rem]">
           Consistência sem congruência: perigo!
         </h1>
         <div className="max-w-[10.375rem] w-full h-[0.1875rem] bg-[#F7D300] rounded-r-[0.3125rem] lg:hidden mt-[.5rem]"></div>
@@ -587,7 +587,7 @@ export default function Home() {
         <Image
           src={grafico}
           alt=""
-          className="sm:hidden max-w-[70.25rem] mx-auto mt-[2.94rem] "
+          className="sm:hidden max-w-[70.25rem] mm:max-w-[60rem] mx-auto mt-[2.94rem] "
         />
         <Image
           src={graficoCel}
@@ -597,7 +597,7 @@ export default function Home() {
         <Image
           src={desenho}
           alt=""
-          className="sm:hidden max-w-[70.25rem] mx-auto mt-[2.94rem] "
+          className="sm:hidden max-w-[70.25rem] mm:max-w-[60rem] mx-auto mt-[2.94rem] "
         />
         <Image
           src={desenhoCel}
@@ -607,7 +607,7 @@ export default function Home() {
         <Image
           src={escolhas}
           alt=""
-          className=" max-w-[35.51894rem] sm:max-w-[19.96844rem] mx-auto mt-[1.87rem] "
+          className=" max-w-[35.51894rem] sm:max-w-[19.96844rem] mm:max-w-[31rem] mx-auto mt-[1.87rem] "
         />
       </section>
 
@@ -625,7 +625,7 @@ export default function Home() {
       </section>
 
       <section className="flex flex-col max-w-[52.162rem] sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[2.94rem] sm:mt-[3.44rem]">
-        <h1 className="text-[2.8125rem] sm:text-[1.25rem] font-bold max-w-[40.125rem] leading-[2.86731rem] sm:leading-[1.6rem] sm:tracking-[0.025rem] tracking-[0.05625rem] lg:-ml-[8.38rem]">
+        <h1 className="text-[2.8125rem] sm:text-[1.25rem] font-bold max-w-[40.125rem] leading-[2.86731rem] sm:leading-[1.6rem] sm:tracking-[0.025rem] tracking-[0.05625rem] lg:-ml-[8.38rem] mm:-ml-[2rem]">
           Por que não usar sistemas complexos?
         </h1>
         <div className="max-w-[10.375rem] w-full h-[0.1875rem] bg-[#F7D300] rounded-r-[0.3125rem] lg:hidden mt-[.5rem]"></div>
@@ -664,7 +664,7 @@ export default function Home() {
       </section>
 
       <section className="max-w-[65.625rem] sm:max-w-[22.5rem] w-full lg:h-[133.375rem] lg:bg-[#E7E7E7] mt-[4.94rem] sm:mt-[3.44rem]">
-        <div className="max-w-[30.4rem] w-full lg:h-[9.5rem] lg:border border-[#D4D4D4] rounded-[0.375rem] text-[2.8125rem] sm:text-[1.25rem] text-[#545353] font-bold lg:-mt-[1.56rem] lg:-ml-[4.63rem]  tracking-[0.05625rem] sm:tracking-[0.025rem] items-center flex justify-center leading-[2.86731rem] sm:leading-[1.6rem] lg:pl-[3rem] sm:pr-[3rem]  lg:bg-[#E7E7E7] ">
+        <div className="max-w-[30.4rem] w-full lg:h-[9.5rem] lg:border border-[#D4D4D4] rounded-[0.375rem] text-[2.8125rem] sm:text-[1.25rem] text-[#545353] font-bold lg:-mt-[1.56rem] lg:-ml-[4.63rem]  tracking-[0.05625rem] sm:tracking-[0.025rem] items-center flex justify-center leading-[2.86731rem] sm:leading-[1.6rem] lg:pl-[3rem] sm:pr-[3rem]  lg:bg-[#E7E7E7] mm:ml-4 mm:pl-6">
           <h1>Acompanhe seu progresso</h1>
         </div>
         <Image
@@ -716,7 +716,7 @@ export default function Home() {
         </section>
 
         <div className="sm:max-w-[24.5625rem] w-full mx-auto">
-          <div className="max-w-[44.59rem] sm:max-w-[20.5625rem] w-full lg:h-[9.5rem] lg:border border-[#D4D4D4] rounded-[0.375rem] text-[2.8125rem] sm:text-[1.25rem] text-[#545353] font-bold lg:mt-[2.94rem] lg:-ml-[4.63rem]  tracking-[0.05625rem] sm:tracking-[0.025rem] lg:items-center flex sm:flex-col justify-center leading-[2.86731rem] sm:leading-[1.6rem] lg:pl-[3rem] sm:pr-[3rem]  lg:bg-[#E7E7E7] sm:mt-[3.44rem] sm:mx-auto">
+          <div className="max-w-[44.59rem] sm:max-w-[20.5625rem] w-full lg:h-[9.5rem] lg:border border-[#D4D4D4] rounded-[0.375rem] text-[2.8125rem] sm:text-[1.25rem] text-[#545353] font-bold lg:mt-[2.94rem] lg:-ml-[4.63rem]  tracking-[0.05625rem] sm:tracking-[0.025rem] lg:items-center flex sm:flex-col justify-center leading-[2.86731rem] sm:leading-[1.6rem] lg:pl-[3rem] sm:pr-[3rem]  lg:bg-[#E7E7E7] sm:mt-[3.44rem] sm:mx-auto mm:ml-4 mm:pl-6">
             <h1>P3 funciona em todos os dispositivos</h1>
             <div className="max-w-[10.375rem] w-full h-[0.1875rem] bg-[#F7D300] rounded-r-[0.3125rem] lg:hidden mt-[.5rem]"></div>
           </div>
@@ -747,7 +747,7 @@ export default function Home() {
       </section>
 
       <section className="flex flex-col max-w-[56.162rem] sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[20.5rem] sm:mt-[3.44rem]">
-        <h1 className="text-[2.8125rem] sm:text-[1.25rem] font-bold max-w-[40.125rem] leading-[2.86731rem] sm:leading-[1.6rem] sm:tracking-[0.025rem] tracking-[0.05625rem] lg:-ml-[8.38rem]">
+        <h1 className="text-[2.8125rem] sm:text-[1.25rem] font-bold max-w-[40.125rem] leading-[2.86731rem] sm:leading-[1.6rem] sm:tracking-[0.025rem] tracking-[0.05625rem] lg:-ml-[8.38rem] mm:-ml-[1.2rem]">
           Bônus ao assinar o aplicativo você ganha...
         </h1>
         <div className="max-w-[10.375rem] w-full h-[0.1875rem] bg-[#F7D300] rounded-r-[0.3125rem] lg:hidden mt-[.5rem]"></div>
@@ -800,7 +800,7 @@ export default function Home() {
       </section>
 
       <section className="flex flex-col max-w-[56.162rem] w-full sm:max-w-[20.8125rem] mx-auto text-[#545353] mt-[2.94rem] sm:mt-[4.17rem] ">
-        <h1 className="text-[2.8125rem] sm:text-[1.25rem] font-bold max-w-[40.125rem] leading-[2.86731rem] sm:leading-[1.6rem] sm:tracking-[0.025rem] tracking-[0.05625rem] lg:-ml-[8.38rem]">
+        <h1 className="text-[2.8125rem] sm:text-[1.25rem] font-bold max-w-[40.125rem] leading-[2.86731rem] sm:leading-[1.6rem] sm:tracking-[0.025rem] tracking-[0.05625rem] lg:-ml-[8.38rem] mm:-ml-[1.2rem]">
           Embasamento científico
         </h1>
 
