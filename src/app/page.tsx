@@ -594,10 +594,11 @@ export default function Home() {
           alt=""
           className="lg:hidden max-w-[21.9rem] mx-auto mt-[.81rem] "
         />
+        <div className=" lg:w-[105%] lg:-ml-4 bg-[#A5A4A4] h-[0.0625rem] mt-[2.94rem] sm:mt-[.81rem]"></div>
         <Image
           src={desenho}
           alt=""
-          className="sm:hidden max-w-[70.25rem] mm:max-w-[60rem] mx-auto mt-[2.94rem] "
+          className="sm:hidden max-w-[70.25rem] mm:max-w-[60rem] mx-auto "
         />
         <Image
           src={desenhoCel}
@@ -609,6 +610,7 @@ export default function Home() {
           alt=""
           className=" max-w-[35.51894rem] sm:max-w-[19.96844rem] mm:max-w-[31rem] mx-auto mt-[1.87rem] "
         />
+        
       </section>
 
       <section className=" w-full">
