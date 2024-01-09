@@ -674,7 +674,7 @@ export default function Home() {
           alt=""
           className="sm:max-w-[22.7255rem] max-w-[70.25rem] mx-auto sm:mt-[1.25rem] mt-[4rem] "
         />
-        <div className=" text-[#545353] text-[1.25rem] sm:text-[1rem] lg:max-w-[56.875rem] sm:max-w-[20rem] mx-auto leading-[1.75rem] mt-[3.33rem] sm:mt-[1.25rem]">
+        <div className=" text-[#545353] text-[1.25rem] sm:text-[1rem] lg:max-w-[56.875rem] sm:max-w-[20rem] mx-auto leading-[1.75rem] mt-[1.07rem] sm:mt-[1.25rem]">
           <p className="">Olhe para o calendário a cima:</p>
           <p className="mt-7 sm:mt-6">
             As bolinhas verdes representam dias ganhos. O dia só é ganho quando
