@@ -63,8 +63,8 @@ export default function Home() {
           </div>
           <div className="leading-[1.875rem] tracking-tight mt-[2.87rem] sm:mt-[1.25rem] max-w-[58.5rem] sm:max-w-[18.375rem] w-full flex flex-col justify-center items-center sm:mx-auto lg:text-center">
             <p>
-              No vídeo abaixo, você vai assistir uma aula de 12 minutos, talvez
-              os 12 minutos mais bem investidos da semana, talvez da sua vida.
+              No vídeo abaixo, você vai assistir uma aula de 13 minutos, talvez
+              os 13 minutos mais bem investidos da semana, talvez da sua vida.
             </p>
             <p className="mt-[1rem] sm:mt-6">
               Você vai aprender a usar as técnicas de organização de tarefas das
@@ -83,7 +83,7 @@ export default function Home() {
       <section className="max-w-[65.625rem] sm:max-w-[22.5rem] w-full h-[111.6875rem] lg:bg-[#E7E7E7] mt-[22.62rem] sm:mt-[19.9rem] rounded-[0.625rem] mm:w-full mm:max-w-[58rem] mm:h-[123rem]">
         <div className="flex flex-col justify-center items-center -mt-[17.31rem] w-full ">
         <YouTube id="video"
-         videoId="JLYf0OjS5aA"/>
+         videoId="sQjWjgFnCpo"/>
           {/* <Image
             src={leandroProd}
             alt=""
