@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "/planner3",
+  // basePath: "/planner3",
 };
 
 module.exports = nextConfig;
