@@ -821,7 +821,7 @@ export default function Home() {
       </section>
       <section className=" w-full">
         <div className=" flex flex-col items-center">
-          <a className="flex flex-col items-center w-full  " href="">
+          <a className="flex flex-col items-center w-full  " href="https://pay.hotmart.com/B79805172S?off=jqkm1app&checkoutMode=10&bid=1703596018359">
             <button className="max-w-[30.38rem] w-full h-[4.25rem] bg-[#F7D300] rounded-[.75rem] mt-[2.94rem] text-[1.25rem] sm:text-[1.125rem] font-extrabold sm:mt-[4.69rem] sm:max-w-[22.5rem] leading-[1.75rem]">
               Acesse o aplicativo
             </button>
