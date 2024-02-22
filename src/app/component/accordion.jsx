@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 
 const AccordionItem = ({ title, content }) => {
@@ -13,7 +11,7 @@ const AccordionItem = ({ title, content }) => {
   return (
     <div className="accordion-item text-[1.25rem] w-full bg-[#E7E7E7] min-h-[2.75rem] rounded-[0.5rem] mt-2 pl-4 pt-2 cursor-pointer">     
         <div className="accordion-header flex gap-2 items-center " onClick={toggleAccordion}>
-        <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronRight} className='fa-xs'/>
+        <img src={isOpen ? 'chevron-down.svg' : 'chevron-right.svg'} alt="Chevron" className='w-[22px] h-[22px]'/>
           <div className="w-[0.125rem] h-[1.4375rem] bg-[#C6C6C6] "></div>
           <h2 className='font-semibold text-[1.25rem] text-[#545353] leading-[1.75rem] sm:tracking-tight sm:text-[1rem]'>{title}</h2>
         </div>
