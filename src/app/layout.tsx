@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Suspense } from "react";
 import Tagmanager from "./Tagmanager";
+import Tagmanager2 from "./Tagmanager2";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Suspense>
           <Tagmanager />
+          <Tagmanager2 />
         </Suspense>
         {children}
       </body>
